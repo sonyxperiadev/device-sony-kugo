@@ -18,4 +18,8 @@ TARGET_BOOTLOADER_BOARD_NAME := F5321
 
 BOARD_KERNEL_CMDLINE += androidboot.hardware=kugo
 
+#Reserve space for data encryption (23894949888-16384)
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 6197084160
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 23894933504
+
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/clearpad/wakeup_gesture"
