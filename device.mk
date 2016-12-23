@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Device path
-DEVICE_PATH := $(DEVICE_PATH)
+DEVICE_PATH := device/sony/kugo
 
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay
