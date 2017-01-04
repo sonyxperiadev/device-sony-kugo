@@ -7,22 +7,24 @@
 		<resource name="xo_therm" type="tz">/sys/class/thermal/thermal_zone3</resource>
 		<resource name="xo_therm_buf" type="tz">/sys/class/thermal/thermal_zone4</resource>
 		<resource name="case_therm" type="tz">/sys/class/thermal/thermal_zone5</resource>
-		<resource name="bl_therm" type="tz">/sys/class/thermal/thermal_zone6</resource>
+		<resource name="chg_temp" type="tz">/sys/class/thermal/thermal_zone6</resource>
 
-		<resource name="tsens_tz_sensor0"  type="tz">/sys/class/thermal/thermal_zone7</resource>
-		<resource name="tsens_tz_sensor1"  type="tz">/sys/class/thermal/thermal_zone8</resource>
-		<resource name="tsens_tz_sensor2"  type="tz">/sys/class/thermal/thermal_zone9</resource>
-		<resource name="tsens_tz_sensor3"  type="tz">/sys/class/thermal/thermal_zone10</resource> <!-- cpu0 -->
-		<resource name="tsens_tz_sensor4"  type="tz">/sys/class/thermal/thermal_zone11</resource> <!-- cpu1 -->
-		<resource name="tsens_tz_sensor5"  type="tz">/sys/class/thermal/thermal_zone12</resource> <!-- cpu4 -->
-		<resource name="tsens_tz_sensor6"  type="tz">/sys/class/thermal/thermal_zone13</resource> <!-- cpu2 -->
-		<resource name="tsens_tz_sensor7"  type="tz">/sys/class/thermal/thermal_zone14</resource> <!-- cpu3 -->
-		<resource name="tsens_tz_sensor8"  type="tz">/sys/class/thermal/thermal_zone15</resource> <!-- cpu5 -->
-		<resource name="tsens_tz_sensor9"  type="tz">/sys/class/thermal/thermal_zone16</resource> <!-- gpu0 -->
-		<resource name="tsens_tz_sensor10" type="tz">/sys/class/thermal/thermal_zone17</resource> <!-- gpu1 -->
+		<resource name="bl_therm"  type="tz">/sys/class/thermal/thermal_zone7</resource>
+		<resource name="tsens_tz_sensor0"  type="tz">/sys/class/thermal/thermal_zone8</resource>
+		<resource name="tsens_tz_sensor1"  type="tz">/sys/class/thermal/thermal_zone9</resource>
+		<resource name="tsens_tz_sensor2"  type="tz">/sys/class/thermal/thermal_zone10</resource> <!-- cpu0 -->
+		<resource name="tsens_tz_sensor3"  type="tz">/sys/class/thermal/thermal_zone11</resource> <!-- cpu1 -->
+		<resource name="tsens_tz_sensor4"  type="tz">/sys/class/thermal/thermal_zone12</resource> <!-- cpu4 -->
+		<resource name="tsens_tz_sensor5"  type="tz">/sys/class/thermal/thermal_zone13</resource> <!-- cpu2 -->
+		<resource name="tsens_tz_sensor6"  type="tz">/sys/class/thermal/thermal_zone14</resource> <!-- cpu3 -->
+		<resource name="tsens_tz_sensor7"  type="tz">/sys/class/thermal/thermal_zone15</resource> <!-- cpu5 -->
+		<resource name="tsens_tz_sensor8"  type="tz">/sys/class/thermal/thermal_zone16</resource> <!-- gpu0 -->
+		<resource name="tsens_tz_sensor9" type="tz">/sys/class/thermal/thermal_zone17</resource> <!-- gpu1 -->
 
-		<resource name="pm8950_tz" type="tz">/sys/class/thermal/thermal_zone18</resource>
-		<resource name="pa_therm0" type="tz">/sys/class/thermal/thermal_zone20</resource>
+		<resource name="tsens_tz_sensor10" type="tz">/sys/class/thermal/thermal_zone18</resource>
+		<resource name="pm8950_tz" type="tz">/sys/class/thermal/thermal_zone19</resource>
+		<resource name="pm8004_tz" type="tz">/sys/class/thermal/thermal_zone20</resource>
+		<resource name="pa_therm0" type="tz">/sys/class/thermal/thermal_zone21</resource>
 
 		<resource name="temp-core" type="union">
 			<resource name="tsens_tz_sensor0" />
@@ -48,8 +50,8 @@
 		</resource>
 
 		<!-- generic cpufreq -->
-		<resource name="cluster-a53" type="sysfs">/sys/module/msm_performance/parameters/cpu_max_freq</resource>
-		<resource name="cluster-a72" type="sysfs">/sys/module/msm_performance/parameters/cpu_max_freq</resource>
+		<resource name="cluster-a53" type="sysfs">/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_max_freq</resource>
+		<resource name="cluster-a72" type="sysfs">/sys/devices/system/cpu/cpu4/cpufreq/cpuinfo_max_freq</resource>
 
 		<!-- hotplugging -->
 		<resource name="thermal-max-cpus" type="sysfs">/sys/devices/system/cpu/cpuquiet/nr_thermal_max_cpus</resource>
