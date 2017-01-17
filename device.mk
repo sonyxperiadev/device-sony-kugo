@@ -81,3 +81,6 @@ PRODUCT_PROPERTY_OVERRIDES := \
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/loire/platform.mk)
 $(call inherit-product, vendor/sony/loire-kugo/kugo-vendor.mk)
+
+# copy wlan firmware
+$(call inherit-product-if-exists, vendor/broadcom/wlan/bcmdhd/firmware/bcm4345/device-bcm.mk)
