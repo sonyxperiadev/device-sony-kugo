@@ -21,6 +21,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 PRODUCT_NAME := aosp_f5321
 PRODUCT_DEVICE := kugo
-PRODUCT_MODEL := Xperia X Compact(AOSP)
+PRODUCT_MODEL := Xperia X Compact (AOSP)
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
