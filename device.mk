@@ -83,4 +83,4 @@ $(call inherit-product, device/sony/loire/platform.mk)
 $(call inherit-product, vendor/sony/loire-kugo/kugo-vendor.mk)
 
 # copy wlan firmware
-$(call inherit-product-if-exists, vendor/broadcom/wlan/bcmdhd/firmware/bcm4345/device-bcm.mk)
+$(call inherit-product-if-exists, vendor/broadcom/wlan/bcmdhd/firmware/bcm43455/device-bcm.mk)
