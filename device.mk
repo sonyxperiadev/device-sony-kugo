@@ -34,6 +34,15 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/rootdir/system/etc/camera/imx241_chromatix.xml:system/etc/camera/imx241_chromatix.xml \
     $(DEVICE_PATH)/rootdir/system/etc/camera/imx300_chromatix.xml:system/etc/camera/imx300_chromatix.xml
 
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/rootdir/system/etc/Bluetooth_cal.acdb:system/etc/Bluetooth_cal.acdb \
+    $(DEVICE_PATH)/rootdir/system/etc/General_cal.acdb:system/etc/General_cal.acdb \
+    $(DEVICE_PATH)/rootdir/system/etc/Global_cal.acdb:system/etc/Global_cal.acdb \
+    $(DEVICE_PATH)/rootdir/system/etc/Handset_cal.acdb:system/etc/Handset_cal.acdb \
+    $(DEVICE_PATH)/rootdir/system/etc/Hdmi_cal.acdb:system/etc/Hdmi_cal.acdb \
+    $(DEVICE_PATH)/rootdir/system/etc/Headset_cal.acdb:system/etc/Headset_cal.acdb \
+    $(DEVICE_PATH)/rootdir/system/etc/Speaker_cal.acdb:system/etc/Speaker_cal.acdb
+
 # Device Specific Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
