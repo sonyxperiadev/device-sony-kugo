@@ -5,6 +5,7 @@
     <ActuatorName>bu64747BS4</ActuatorName>
     <FlashName>pmic</FlashName>
     <ChromatixName>imx300_chromatix</ChromatixName>
+    <I2CFrequencyMode>FAST_PLUS</I2CFrequencyMode>
     <ModesSupported>1</ModesSupported>
     <Position>BACK</Position>
     <MountAngle>90</MountAngle>
@@ -27,6 +28,7 @@
     <CameraId>1</CameraId>
     <SensorName>imx241</SensorName>
     <ChromatixName>imx241_chromatix</ChromatixName>
+    <I2CFrequencyMode>FAST</I2CFrequencyMode>
     <ModesSupported>1</ModesSupported>
     <Position>FRONT</Position>
     <MountAngle>360</MountAngle>
