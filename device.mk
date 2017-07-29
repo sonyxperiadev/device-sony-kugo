@@ -87,6 +87,9 @@ $(call inherit-product, device/sony/loire/platform.mk)
 # copy wlan firmware
 $(call inherit-product-if-exists, vendor/broadcom/wlan/bcmdhd/firmware/bcm43455/device-bcm.mk)
 
+# copy NFC firmware
+$(call inherit-product-if-exists, vendor/nxp/nxp-vendor.mk)
+
 # include board vendor blobs
 $(call inherit-product, vendor/sony/loire-common/loire-partial.mk)
 
