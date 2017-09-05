@@ -1,29 +1,39 @@
 <thermanager>
 	<resources>
 		<!-- thermal zones -->
-		<resource name="bms" type="tz">/sys/class/thermal/thermal_zone0</resource>
-		<resource name="battery" type="tz">/sys/class/thermal/thermal_zone1</resource>
+		<resource name="battery" type="tz">/sys/class/thermal/thermal_zone0</resource>
+		<resource name="bms" type="tz">/sys/class/thermal/thermal_zone1</resource>
 		<resource name="pa_therm1" type="tz">/sys/class/thermal/thermal_zone2</resource>
 		<resource name="xo_therm" type="tz">/sys/class/thermal/thermal_zone3</resource>
 		<resource name="xo_therm_buf" type="tz">/sys/class/thermal/thermal_zone4</resource>
 		<resource name="case_therm" type="tz">/sys/class/thermal/thermal_zone5</resource>
-		<resource name="flash_therm" type="tz">/sys/class/thermal/thermal_zone6</resource>
-		<resource name="tsens_tz_sensor0" type="tz">/sys/class/thermal/thermal_zone7</resource>
-		<resource name="tsens_tz_sensor1" type="tz">/sys/class/thermal/thermal_zone8</resource>
-		<resource name="tsens_tz_sensor2" type="tz">/sys/class/thermal/thermal_zone9</resource>
-		<resource name="tsens_tz_sensor3" type="tz">/sys/class/thermal/thermal_zone10</resource> <!-- cpu0 -->
-		<resource name="tsens_tz_sensor4" type="tz">/sys/class/thermal/thermal_zone11</resource> <!-- cpu1 -->
-		<resource name="tsens_tz_sensor5" type="tz">/sys/class/thermal/thermal_zone12</resource> <!-- cpu4 -->
-		<resource name="tsens_tz_sensor6" type="tz">/sys/class/thermal/thermal_zone13</resource> <!-- cpu2 -->
-		<resource name="tsens_tz_sensor7" type="tz">/sys/class/thermal/thermal_zone14</resource> <!-- cpu3 -->
-		<resource name="tsens_tz_sensor8" type="tz">/sys/class/thermal/thermal_zone15</resource> <!-- cpu5 -->
-		<resource name="tsens_tz_sensor9" type="tz">/sys/class/thermal/thermal_zone16</resource> <!-- gpu0 -->
-		<resource name="tsens_tz_sensor10" type="tz">/sys/class/thermal/thermal_zone17</resource> <!-- gpu1 -->
-		<resource name="pm8950_tz" type="tz">/sys/class/thermal/thermal_zone18</resource>
-		<resource name="pm8004_tz" type="tz">/sys/class/thermal/thermal_zone19</resource>
-		<resource name="pa_therm0" type="tz">/sys/class/thermal/thermal_zone20</resource>
-		<resource name="wsatz.11" type="tz">/sys/class/thermal/thermal_zone21</resource>
-		<resource name="wsatz.12" type="tz">/sys/class/thermal/thermal_zone22</resource>
+		<resource name="chg_temp" type="tz">/sys/class/thermal/thermal_zone6</resource>
+		<resource name="flash_therm" type="tz">/sys/class/thermal/thermal_zone7</resource>
+		<resource name="pm8950_tz" type="tz">/sys/class/thermal/thermal_zone8</resource>
+		<resource name="pm8004_tz" type="tz">/sys/class/thermal/thermal_zone9</resource>
+		<resource name="pa_therm0" type="tz">/sys/class/thermal/thermal_zone10</resource>
+		<resource name="tsens_tz_sensor0" type="tz">/sys/class/thermal/thermal_zone11</resource>
+		<resource name="tsens_tz_sensor1" type="tz">/sys/class/thermal/thermal_zone12</resource>
+		<resource name="tsens_tz_sensor2" type="tz">/sys/class/thermal/thermal_zone13</resource>
+		<resource name="tsens_tz_sensor3" type="tz">/sys/class/thermal/thermal_zone14</resource>
+		<resource name="tsens_tz_sensor4" type="tz">/sys/class/thermal/thermal_zone15</resource>
+		<resource name="tsens_tz_sensor5" type="tz">/sys/class/thermal/thermal_zone16</resource>
+		<resource name="tsens_tz_sensor6" type="tz">/sys/class/thermal/thermal_zone17</resource>
+		<resource name="tsens_tz_sensor7" type="tz">/sys/class/thermal/thermal_zone18</resource>
+		<resource name="tsens_tz_sensor8" type="tz">/sys/class/thermal/thermal_zone19</resource>
+		<resource name="tsens_tz_sensor9" type="tz">/sys/class/thermal/thermal_zone20</resource>
+		<resource name="tsens_tz_sensor10" type="tz">/sys/class/thermal/thermal_zone21</resource>
+		<resource name="LLM_IA72" type="tz">/sys/class/thermal/thermal_zone22</resource>
+		<resource name="THRM_72-0" type="tz">/sys/class/thermal/thermal_zone23</resource>
+		<resource name="THRM_72-1" type="tz">/sys/class/thermal/thermal_zone24</resource>
+		<resource name="THRM_72-2" type="tz">/sys/class/thermal/thermal_zone25</resource>
+		<resource name="THRM_72-3" type="tz">/sys/class/thermal/thermal_zone26</resource>
+		<resource name="THRM_53-0" type="tz">/sys/class/thermal/thermal_zone27</resource>
+		<resource name="THRM_53-1" type="tz">/sys/class/thermal/thermal_zone28</resource>
+		<resource name="THRM_53-2" type="tz">/sys/class/thermal/thermal_zone29</resource>
+		<resource name="THRM_53-3" type="tz">/sys/class/thermal/thermal_zone30</resource>
+		<!--<resource name="wsatz.11" type="tz">/sys/class/thermal/thermal_zone31</resource>
+		<resource name="wsatz.12" type="tz">/sys/class/thermal/thermal_zone32</resource>-->
 
 		<resource name="cluster-0-temp" type="union">
 			<resource name="tsens_tz_sensor3" />
