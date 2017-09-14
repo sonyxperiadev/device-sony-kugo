@@ -16,6 +16,9 @@ include device/sony/loire/PlatformConfig.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := F5321
 
+# Platform
+PRODUCT_PLATFORM := loire
+
 BOARD_KERNEL_CMDLINE += androidboot.hardware=kugo
 
 #Reserve space for data encryption (23894949888-16384)
