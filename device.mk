@@ -97,7 +97,7 @@ $(call inherit-product-if-exists, vendor/broadcom/wlan/bcmdhd/firmware/bcm43455/
 $(call inherit-product-if-exists, vendor/nxp/nxp-vendor.mk)
 
 # include board vendor blobs
-$(call inherit-product, vendor/sony/loire-common/loire-partial.mk)
+$(call inherit-product-if-exists, vendor/sony/loire-common/loire-partial.mk)
 
 # include optional vendor configuration
 $(call inherit-product-if-exists, vendor/qcom/proprietary/common/build/qcom-packages.mk)
