@@ -33,7 +33,7 @@
     <Position>FRONT</Position>
     <MountAngle>360</MountAngle>
     <CSIInfo>
-      <CSIDCore>2</CSIDCore>
+      <CSIDCore>1</CSIDCore>
       <LaneMask>0x7</LaneMask>
       <LaneAssign>0x4320</LaneAssign>
       <ComboMode>0</ComboMode>
