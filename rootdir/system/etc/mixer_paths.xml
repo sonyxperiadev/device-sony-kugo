@@ -2088,6 +2088,7 @@
     <path name="speaker-mic">
         <path name="dmic4" />
         <path name="dmic2-adj-gain" />
+        <ctl name="RX7 Digital Volume" value="0" />
     </path>
 
     <path name="stereo-mic-common">
