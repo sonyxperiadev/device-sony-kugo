@@ -100,10 +100,11 @@
 		<mitigation level="13"><value resource="shutdown" /></mitigation>
 	</control>
 
-	<control name="cluster-1-hotplug">
+	<control name="soc-cpu-hotplug">
 		<mitigation level="off"><value resource="thermal-max-cpus">6</value></mitigation>
 		<mitigation level="1"><value resource="thermal-max-cpus">5</value></mitigation>
 		<mitigation level="2"><value resource="thermal-max-cpus">4</value></mitigation>
+		<mitigation level="3"><value resource="thermal-max-cpus">2</value></mitigation>
 	</control>
 
 	<control name="adreno-clk">
@@ -167,7 +168,7 @@
 		<threshold trigger="78" clear="73">
 			<mitigation name="cluster-0-clk" level="5" />
 		</threshold>
-		<threshold trigger="120" clear="100">
+		<threshold trigger="90" clear="85">
 			<mitigation name="cluster-0-clk" level="8" />
 		</threshold>
 	</configuration>
@@ -188,18 +189,6 @@
 		</threshold>
 	</configuration>
 
-	<configuration sensor="case_therm">
-		<threshold>
-			<mitigation name="cluster-1-hotplug" level="off" />
-		</threshold>
-		<threshold trigger="500" clear="498">
-			<mitigation name="cluster-1-hotplug" level="1" />
-		</threshold>
-		<threshold trigger="505" clear="500">
-			<mitigation name="cluster-1-hotplug" level="2" />
-		</threshold>
-	</configuration>
-
 	<configuration sensor="cluster-1-temp">
 		<threshold>
 			<mitigation name="cluster-1-clk" level="off" />
@@ -210,8 +199,22 @@
 		<threshold trigger="78" clear="73">
 			<mitigation name="cluster-1-clk" level="11" />
 		</threshold>
-		<threshold trigger="120" clear="100">
+		<threshold trigger="90" clear="85">
 			<mitigation name="cluster-1-clk" level="13" />
+			<mitigation name="soc-cpu-hotplug" level="3" />
+		</threshold>
+	</configuration>
+
+	<!-- ALL CPUs -->
+	<configuration sensor="case_therm">
+		<threshold>
+			<mitigation name="soc-cpu-hotplug" level="off" />
+		</threshold>
+		<threshold trigger="500" clear="498">
+			<mitigation name="soc-cpu-hotplug" level="1" />
+		</threshold>
+		<threshold trigger="505" clear="500">
+			<mitigation name="soc-cpu-hotplug" level="2" />
 		</threshold>
 	</configuration>
 
@@ -261,7 +264,7 @@
 		<threshold>
 			<mitigation name="shutdown" level="off" />
 		</threshold>
-		<threshold trigger="120" clear="100">
+		<threshold trigger="90" clear="85">
 			<mitigation name="shutdown" level="1" />
 		</threshold>
 	</configuration>
@@ -271,9 +274,20 @@
 		<threshold>
 			<mitigation name="shutdown" level="off" />
 		</threshold>
-		<threshold trigger="67000" clear="63000">
+		<threshold trigger="67000" clear="47000">
 			<mitigation name="shutdown" level="1" />
 		</threshold>
 	</configuration>
+
+	<!-- Whole system protection -->
+	<configuration sensor="case_therm">
+		<threshold>
+			<mitigation name="shutdown" level="off" />
+		</threshold>
+		<threshold trigger="741" clear="670">
+			<mitigation name="shutdown" level="1" />
+		</threshold>
+	</configuration>
+
 
 </thermanager>
