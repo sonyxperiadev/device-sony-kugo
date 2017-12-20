@@ -97,7 +97,7 @@ PRODUCT_PROPERTY_OVERRIDES := \
 $(call inherit-product, device/sony/loire/platform.mk)
 
 # copy wlan firmware
-$(call inherit-product-if-exists, vendor/broadcom/wlan/bcmdhd/firmware/bcm43455/device-bcm.mk)
+$(call inherit-product-if-exists, vendor/broadcom/wlan/bcmdhd/firmware/bcm43455/device-bcm-vendor.mk)
 
 # copy NFC firmware
 $(call inherit-product-if-exists, vendor/nxp/nxp-vendor.mk)
