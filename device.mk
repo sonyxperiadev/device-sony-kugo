@@ -31,9 +31,9 @@ PRODUCT_COPY_FILES += \
 
 # Camera Configuration
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/rootdir/system/etc/camera/camera_config.xml:system/etc/camera/camera_config.xml \
-    $(DEVICE_PATH)/rootdir/system/etc/camera/imx241_chromatix.xml:system/etc/camera/imx241_chromatix.xml \
-    $(DEVICE_PATH)/rootdir/system/etc/camera/imx300_chromatix.xml:system/etc/camera/imx300_chromatix.xml
+    $(DEVICE_PATH)/rootdir/vendor/etc/camera/camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camera_config.xml \
+    $(DEVICE_PATH)/rootdir/vendor/etc/camera/imx241_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx241_chromatix.xml \
+    $(DEVICE_PATH)/rootdir/vendor/etc/camera/imx300_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx300_chromatix.xml
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/rootdir/vendor/etc/acdbdata/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Bluetooth_cal.acdb \
