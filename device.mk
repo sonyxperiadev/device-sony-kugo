@@ -67,6 +67,7 @@ PRODUCT_COPY_FILES += \
 
 # Device Init
 PRODUCT_PACKAGES += \
+    fstab.kugo \
     init.recovery.kugo \
     init.kugo \
     ueventd.kugo
