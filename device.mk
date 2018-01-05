@@ -16,7 +16,7 @@
 DEVICE_PATH := device/sony/kugo/rootdir
 
 DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlay
+    device/sony/kugo/overlay
 
 # Device Specific Permissions
 PRODUCT_COPY_FILES := \
