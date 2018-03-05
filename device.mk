@@ -69,8 +69,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.kugo \
     init.recovery.kugo \
-    init.kugo \
-    ueventd.kugo
+    init.kugo
 
 # Lights
 PRODUCT_PACKAGES += \
