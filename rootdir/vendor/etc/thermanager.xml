@@ -65,6 +65,9 @@
 		<resource name="adreno-max-clk" type="sysfs">/sys/class/kgsl/kgsl-3d0/max_gpuclk</resource>
 		<resource name="charge_speed" type="sysfs">/sys/class/power_supply/battery/system_temp_level</resource>
 
+		<!-- early boot thermal mitigation control -->
+		<resource name="msm_thermal" type="sysfs">/sys/module/msm_thermal/parameters/enabled</resource>
+
 		<resource name="shutdown" type="halt" delay="5" />
 
 	</resources>
@@ -72,6 +75,11 @@
 	<control name="shutdown">
 		<mitigation level="off" />
 		<mitigation level="1"><value resource="shutdown"/></mitigation>
+	</control>
+
+	<control name="msm_thermal">
+		<mitigation level="off"><value resource="msm_thermal">Y</value></mitigation>
+		<mitigation level="1"><value resource="msm_thermal">N</value></mitigation>
 	</control>
 
 	<control name="cluster-0-clk">
@@ -316,6 +324,16 @@
 		</threshold>
 		<threshold trigger="741" clear="670">
 			<mitigation name="shutdown" level="1" />
+		</threshold>
+	</configuration>
+
+	<!-- disable early boot thermal mitigation -->
+	<configuration sensor="cluster-0-temp">
+		<threshold>
+			<mitigation name="msm_thermal" level="off" />
+		</threshold>
+		<threshold trigger="10" clear="9">
+			<mitigation name="msm_thermal" level="1" />
 		</threshold>
 	</configuration>
 
