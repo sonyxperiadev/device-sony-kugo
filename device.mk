@@ -71,10 +71,6 @@ PRODUCT_PACKAGES += \
     init.recovery.kugo \
     init.kugo
 
-# Lights
-PRODUCT_PACKAGES += \
-    lights.kugo
-
 # Simple PowerHAL
 PRODUCT_PACKAGES += \
     power.kugo
