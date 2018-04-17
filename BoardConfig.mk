@@ -14,7 +14,7 @@
 
 include device/sony/loire/PlatformConfig.mk
 
-TARGET_BOOTLOADER_BOARD_NAME := F5321
+TARGET_BOOTLOADER_BOARD_NAME := loire
 
 # Platform
 PRODUCT_PLATFORM := loire
