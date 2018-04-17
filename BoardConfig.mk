@@ -16,9 +16,6 @@ include device/sony/loire/PlatformConfig.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := loire
 
-# Platform
-PRODUCT_PLATFORM := loire
-
 BOARD_KERNEL_CMDLINE += androidboot.hardware=kugo
 
 # Partition information
