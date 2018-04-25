@@ -2873,8 +2873,8 @@
 
     <path name="handset-stereo-dmic-ef">
         <path name="camcorder-mic-common" />
-        <ctl name="DEC8 Volume" value="101" />
-        <ctl name="DEC7 Volume" value="83" />
+        <path name="dmic1-adj-gain" />
+        <path name="dmic2-adj-gain" />
     </path>
 
     <path name="speaker-stereo-dmic-ef">
