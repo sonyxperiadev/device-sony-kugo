@@ -1757,12 +1757,12 @@
 
     <!-- Gain offset target for dmic1 unit calibration -->
     <path name="dmic1-adj-gain">
-        <ctl name="DEC7 Volume" value="104" />
+        <ctl name="DEC7 Volume" value="110" />
     </path>
 
     <!-- Gain offset target for dmic2 unit calibration -->
     <path name="dmic2-adj-gain">
-        <ctl name="DEC8 Volume" value="92" />
+        <ctl name="DEC8 Volume" value="96" />
     </path>
 
     <!-- For Tasha, DMIC numbered from 0 to 5 -->
