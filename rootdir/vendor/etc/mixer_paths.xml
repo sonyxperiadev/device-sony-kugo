@@ -2342,9 +2342,9 @@
     </path>
 
     <path name="voice-speaker">
-        <ctl name="SLIM RX1 MUX" value="AIF_MIX1_PB" />
+        <ctl name="SLIM RX0 MUX" value="AIF_MIX1_PB" />
         <ctl name="SLIM_0_RX Channels" value="One" />
-        <ctl name="RX INT8_1 MIX1 INP0" value="RX1" />
+        <ctl name="RX INT8_1 MIX1 INP0" value="RX0" />
         <ctl name="RX8 Digital Volume" value="92" />
         <ctl name="SpkrRight COMP Switch" value="1" />
         <ctl name="SpkrRight BOOST Switch" value="1" />
