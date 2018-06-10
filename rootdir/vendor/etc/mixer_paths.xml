@@ -1826,8 +1826,8 @@
         <ctl name="SLIM_0_RX Channels" value="Two" />
         <ctl name="RX INT7_1 MIX1 INP0" value="RX0" />
         <ctl name="RX INT8_1 MIX1 INP0" value="RX1" />
-        <ctl name="RX7 Digital Volume" value="92" />
-        <ctl name="RX8 Digital Volume" value="92" />
+        <ctl name="RX7 Digital Volume" value="86" />
+        <ctl name="RX8 Digital Volume" value="86" />
         <ctl name="SpkrLeft COMP Switch" value="1" />
         <ctl name="SpkrRight COMP Switch" value="1" />
         <ctl name="SpkrLeft BOOST Switch" value="1" />
@@ -2345,7 +2345,7 @@
         <ctl name="SLIM RX0 MUX" value="AIF_MIX1_PB" />
         <ctl name="SLIM_0_RX Channels" value="One" />
         <ctl name="RX INT8_1 MIX1 INP0" value="RX0" />
-        <ctl name="RX8 Digital Volume" value="92" />
+        <ctl name="RX8 Digital Volume" value="86" />
         <ctl name="SpkrRight COMP Switch" value="1" />
         <ctl name="SpkrRight BOOST Switch" value="1" />
         <ctl name="SpkrRight VISENSE Switch" value="1" />
