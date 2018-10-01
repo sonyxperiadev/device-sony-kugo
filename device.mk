@@ -68,6 +68,10 @@ PRODUCT_COPY_FILES += \
 # WIFI FW patch
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/vendor/firmware/bcmdhd.cal:$(TARGET_COPY_OUT_VENDOR)/firmware/bcmdhd.cal
+ifeq ($(WIFI_DRIVER_BUILT),brcmfmac)
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/vendor/firmware/bcmdhd.cal:$(TARGET_COPY_OUT_VENDOR)/firmware/brcm/brcmfmac43455-sdio.txt
+endif
 
 # Device Init
 PRODUCT_PACKAGES += \
