@@ -81,10 +81,6 @@ PRODUCT_PACKAGES += \
     init.recovery.kugo \
     init.kugo
 
-# Simple PowerHAL
-PRODUCT_PACKAGES += \
-    power.kugo
-
 # Telephony Packages (AOSP)
 PRODUCT_PACKAGES += \
     InCallUI \
