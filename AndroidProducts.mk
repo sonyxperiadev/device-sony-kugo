@@ -14,3 +14,7 @@
 
 PRODUCT_MAKEFILES := $(LOCAL_DIR)/aosp_f5321.mk
 
+COMMON_LUNCH_CHOICES += \
+   aosp_f5321-eng \
+   aosp_f5321-userdebug
+
