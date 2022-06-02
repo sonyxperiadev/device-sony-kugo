@@ -1,4 +1,5 @@
-# Copyright (C) 2015 Sony Mobile Communications Inc.
+# SPDX-FileCopyrightText: no
+# SPDX-License-Identifier: CC0-1.0
 NVRAMRev=$06778910$
 sromrev=11
 vendid=0x14e4
